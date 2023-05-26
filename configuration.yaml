@@ -1,3 +1,8 @@
+welcome-message: False
+#web:
+#  base-url: https://f7b4-91-107-239-247.ngrok-free.app
+
+
 connectors:
   matrix:
     # Required
@@ -11,7 +16,25 @@ connectors:
     device_id: "OPSDroid"
     enable_encryption: True
 
+#  telegram:
+#    # required
+#    token: "6075160316:AAHsYGo1pewwSZQMgkC-XZQCOs7onMHGep4"  # Telegram bot token
+#    # optional
+#    bot-name: opsdroid # Name to be used by the bot in some replies, defaults to opsdroid
+#    reply-unauthorized: True # Should the bot reply to unauthorized users?
+
 
 skills:
+  hello: { }
   ping:
     path: custom_skills/ping_skill.py
+  tooti:
+    path: custom_skills/tooti_skill.py
+  image_not_recognizer:
+    path: custom_skills/image_not_recognizer.py
+
+logging:
+  level: info
+  path: ~/.opsdroid/output.log
+  console: true
+  extended: true

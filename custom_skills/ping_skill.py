@@ -1,7 +1,6 @@
 import logging
-
 from opsdroid.skill import Skill
-from opsdroid.matchers import match_regex
+from opsdroid.matchers import match_regex, match_webhook
 
 
 class PingSkill(Skill):
