@@ -1,5 +1,6 @@
 welcome-message: False
-#web:
+web:
+  webhook-token: "S00p3r3cureToken"
 #  base-url: https://f7b4-91-107-239-247.ngrok-free.app
 
 
@@ -26,6 +27,8 @@ connectors:
 
 skills:
   hello: { }
+  buttons:
+    path: custom_skills/webhooks.py
   ping:
     path: custom_skills/ping_skill.py
   tooti:
