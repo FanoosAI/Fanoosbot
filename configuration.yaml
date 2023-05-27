@@ -17,14 +17,6 @@ connectors:
     device_id: "OPSDroid"
     enable_encryption: True
 
-#  telegram:
-#    # required
-#    token: "6075160316:AAHsYGo1pewwSZQMgkC-XZQCOs7onMHGep4"  # Telegram bot token
-#    # optional
-#    bot-name: opsdroid # Name to be used by the bot in some replies, defaults to opsdroid
-#    reply-unauthorized: True # Should the bot reply to unauthorized users?
-
-
 skills:
   hello: { }
   buttons:
