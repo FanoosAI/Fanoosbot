@@ -35,6 +35,15 @@ skills:
     path: custom_skills/tooti_skill.py
   image_not_recognizer:
     path: custom_skills/image_not_recognizer.py
+  coin_flip:
+    path: custom_skills/coinflip_skill.py
+  weather:
+    path: custom_skills/weather_skill.py
+    units: metric
+    api-key: fb7b43c368e6e89ee24c2d93a056f407
+    no-cache: true
+  all:
+    path: custom_skills/all_events.py
 
 logging:
   level: info

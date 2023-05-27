@@ -27,3 +27,8 @@ class ButtonsSkill(Skill):
         ]
         response_body = json.JSONEncoder().encode(response_body)
         return Response(body=response_body, status=200)
+
+    @match_webhook('health_check')
+    async def health_check(self, event: Request):
+        logging.info("Health check request")
+        return Response(body="OK", status=200)
